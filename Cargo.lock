@@ -52,6 +52,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d26c52dbd32dccf2d10cac7725f8eae5296885fb5703b261f7d0a0739ec807ab"
 
 [[package]]
+name = "once_cell"
+version = "1.21.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.95"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -70,7 +76,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rdx-quantoid"
+name = "rdx-graphite"
 version = "0.1.0"
 dependencies = [
  "rdx-stderr",
@@ -78,11 +84,12 @@ dependencies = [
 
 [[package]]
 name = "rdx-stderr"
-version = "0.4.2"
+version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5102d740fb7042bf9b53683e072c5c1000210e57cd0643756e73d67fd069f82a"
+checksum = "52d4230b2d3bd0f795e273fa595ec91200cbac248f26f9108b7a7055fb04136d"
 dependencies = [
  "function_name",
+ "once_cell",
  "strum",
  "strum_macros",
  "termcolor",
