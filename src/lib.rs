@@ -6,8 +6,8 @@
 //!
 //! ---
 //!
-#[path = "rdx/quants/node.rs"]
+#[path = "rdx/quants/nodes.rs"]
 pub mod nodes;
 
 
-pub use nodes::{Node};
+pub use nodes::Node;
